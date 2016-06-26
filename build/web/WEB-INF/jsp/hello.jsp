@@ -13,7 +13,8 @@
     </head>
     <body>
         <h3>Hello. This is a View of ToDoListSPring Web Application</h3>
-         <p>Greetings, it is now <c:out value="${now}"/></p>
+         <p>Greetings, today is <c:out value="${model.today}"/></p>
+         <p>The list of tasks for today: <c:out value="${model.daytasks}"/>
         <br><br>Please enter date for the Task: <input type="text" name="taskDate" size="20">
         <br><br>Please enter your task here:&nbsp&nbsp&nbsp&nbsp <input type="text" name="newTask" size="100">
     </body>

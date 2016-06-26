@@ -10,7 +10,7 @@ package ToDoListSpring;
  * @author onovikov
  */
 import org.springframework.web.servlet.ModelAndView; 
-import ToDoListSpring.web.HelloController; 
+import todolistspring.HelloController; 
 import junit.framework.TestCase; 
 public class HelloControllerTests extends TestCase { 
     public void testHandleRequestView() throws Exception{       

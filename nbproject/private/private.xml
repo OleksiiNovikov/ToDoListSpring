@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/onovikov/NetBeansProjects/ToDoListSpring/test/ToDoListSpring/HelloControllerTests.java</file>
+            <file>file:/Users/onovikov/NetBeansProjects/ToDoListSpring/web/WEB-INF/web.xml</file>
+            <file>file:/Users/onovikov/NetBeansProjects/ToDoListSpring/web/WEB-INF/applicationContext.xml</file>
+            <file>file:/Users/onovikov/NetBeansProjects/ToDoListSpring/src/java/model/toDoLIst.java</file>
+            <file>file:/Users/onovikov/NetBeansProjects/ToDoListSpring/web/WEB-INF/jsp/index.jsp</file>
+            <file>file:/Users/onovikov/NetBeansProjects/ToDoListSpring/web/WEB-INF/ToDoListSpring-servlet.xml</file>
+            <file>file:/Users/onovikov/NetBeansProjects/ToDoListSpring/web/WEB-INF/jsp/include.jsp</file>
+            <file>file:/Users/onovikov/NetBeansProjects/ToDoListSpring/web/redirect.jsp</file>
+            <file>file:/Users/onovikov/NetBeansProjects/ToDoListSpring/web/WEB-INF/jsp/hello.jsp</file>
+            <file>file:/Users/onovikov/NetBeansProjects/ToDoListSpring/src/java/ToDoListSpring/HelloController.java</file>
+        </group>
+    </open-files>
+</project-private>
