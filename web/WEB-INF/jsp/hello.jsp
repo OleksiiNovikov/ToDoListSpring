@@ -17,5 +17,6 @@
          <p>The list of tasks for today: <c:out value="${model.daytasks}"/>
         <br><br>Please enter date for the Task: <input type="text" name="taskDate" size="20">
         <br><br>Please enter your task here:&nbsp&nbsp&nbsp&nbsp <input type="text" name="newTask" size="100">
+        <br><br><input type="submit" value="Submit">
     </body>
 </html>
