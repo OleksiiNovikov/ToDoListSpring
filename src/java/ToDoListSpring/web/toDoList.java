@@ -13,10 +13,13 @@ import java.util.HashMap;
  *
  * @author onovikov
  */
-class toDoList{
+class toDoList implements ToDoInterface {
     private HashMap<String, ArrayList<String>> tasksMap = new HashMap<String, ArrayList<String>>();
+    public String date;
+    public String task;
     public static int count = 0;
     public int id;
+  
     
     toDoList() {
         id = count;
@@ -28,16 +31,39 @@ class toDoList{
         return tasksMap.get(date);
     }
     
+    @Override
     public void addTask(String date, String task) {
         if(tasksMap.get(date)!= null){
             ArrayList<String> tasks = tasksMap.get(date);
             tasks.add(task);
             tasksMap.put(date, tasks);
         } else{
-            ArrayList<String> lists = new ArrayList<String>();
-            lists.add(task);
-            tasksMap.put(date, lists);
+            ArrayList<String> tasks = new ArrayList<String>();
+            tasks.add(task);
+            tasksMap.put(date, tasks);
+        }   
+        
+    }
+
+    @Override
+    public void deleteAllDayTasks(String date) {
+        if(tasksMap.get(date) != null) {
+            tasksMap.remove(date);
+            System.out.println("All tasks for day: " + date + " have been removed");
+        } else {
+            System.out.println("Nothing to remove. There are no tasks for day: " + date);
         }
         
+    }
+
+    @Override
+    public void deleteTask(String date, String task) {
+        if(tasksMap.get(date) != null && tasksMap.get(date).contains(task)) {
+            tasksMap.get(date).remove(task);
+        } else if(tasksMap.get(date).contains(task) == false) {
+            System.out.println("Task: " + task + " for the day:" + date + " does not exist!" );
+        } else {
+            System.out.println("There is no tasks for the date: " + date + "Nothing to delete");
+        }
     }
 }

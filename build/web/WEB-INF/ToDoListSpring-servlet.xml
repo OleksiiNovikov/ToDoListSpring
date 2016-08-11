@@ -24,6 +24,8 @@
         </property>
     </bean>
 
+    
+
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/jsp/"
@@ -37,6 +39,14 @@
           p:viewName="index" />
     
     <!-- The application context definition for the springapp DispatcherServlet-->
-    <bean name="/hello.htm" class="ToDoListSpring.web.HelloController" />
+    
+    <!--Commented out for testing purpose <bean name="/hello.htm" class="ToDoListSpring.web.HelloController" /> -->
+    <bean name="/hello" class="ToDoListSpring.web.HelloController" />
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+    <!--<bean name="/resultViewTasks.htm" class="ToDoListSpring.web.viewTasksController"> -->
+     
 
 </beans>

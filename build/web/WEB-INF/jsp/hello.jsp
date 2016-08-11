@@ -14,9 +14,10 @@
     <body>
         <h3>Hello. This is a View of ToDoListSPring Web Application</h3>
          <p>Greetings, today is <c:out value="${model.today}"/></p>
-         <p>The list of tasks for today: <c:out value="${model.daytasks}"/>
-        <br><br>Please enter date for the Task: <input type="text" name="taskDate" size="20">
-        <br><br>Please enter your task here:&nbsp&nbsp&nbsp&nbsp <input type="text" name="newTask" size="100">
-        <br><br><input type="submit" value="Submit">
+        <p>The list of tasks for today: <c:out value="${model.tasks}"/>
+        <form action="resultViewTasks" method=“GET”>
+        Date: <input type="text" name="date" size="20"/>
+        <input type="submit" value="View Tasks"/>
+         </form>
     </body>
 </html>
